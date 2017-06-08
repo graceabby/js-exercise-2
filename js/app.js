@@ -8,11 +8,9 @@ function addToDo(event){
 		
 	if (userInput.value === ''){
 		return false; // will stop prevent the execution of code following
-
-
 	}
 
-		toDoList.innerHTML += '<li>' + userInput.value + '</li>';
+		toDoList.innerHTML = '<li>' + userInput.value + '</li>' + toDoList.innerHTML;
 		userInput.value = '';
 }
 
