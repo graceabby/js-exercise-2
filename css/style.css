@@ -9,6 +9,17 @@ h1 {
 body{
 	background: lavender;
 }
+.header {
+	padding: 100px;
+	background-image: url("../images/to-do-list.jpeg");
+	background-size: cover; /* will stretch out image to fill page if image is too small*/ 
+	background-position: center;
+	text-align: center;
+	font-family: times;
+	font-style: italic;
+	font-size: 20px;
+	margin-bottom: 25px;
+	}
 .center-form {
 	display: flex;
 	justify-content: center;
@@ -16,8 +27,8 @@ body{
 }
 .labels {
 	display: block;
-	width: 260px;
-	font-size: 18px;
+	width: 600px;
+	font-size: 30px;
 	text-align: center;
 	border: 2px solid #000;
 	padding: 10px 0;
@@ -25,28 +36,27 @@ body{
 
 }
 #to-do-list {
-		list-style: decimal;
+	list-style: decimal;
 	display: block;
-	/*padding: 0 45%;*/
-	margin: 0 auto;
+	margin: 10px auto;
 	height:;
 	width: 100%;
 	background: #fff;
+	border: 3px solid pink;
+	font-size: 20px;
 }
-ul li.checked {
-	background: #888;
-	color: #fff;
-	text-decoration: line-through;
+.close-to-do {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 20px;
+	color: pink;
 }
-ul li.checked::before {
-content: '';
-position: absolute;
-border-color: #fff;
-border-style: solid;
-border-width: 0 2px 2px 0;
-top: 10px;
-left: 16px;
-transform: rotate(45deg);
-height: 15px;
-width: 7px;
+#user-submit {
+	font-size: 14px;
+	border-radius: 30px;
+}
+input {
+	padding: 10px 5px 10px 5px;
+	font-size: 18px;
+
 }
